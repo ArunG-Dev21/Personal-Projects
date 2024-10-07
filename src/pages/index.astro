@@ -1,0 +1,40 @@
+---
+import Header from "../Components/Header.astro"
+import Button from "../Components/Button.astro"
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+	</head>
+	<body class="max-w-2xl shadow-lg mx-auto bg-abstract h-screen">
+		<Header/>
+		<div class="text-center bg-white py-5">
+			<h1 class="text-violet-400 text-5xl font-bold ">
+				Hello There bruv!
+			</h1>
+			<h2 class="text-violet-600 text-3xl font-semibold">
+				I am an aspiring <br><span class="font-extrabold text-7xl text-violet-900">UI DEVELOPER</span>
+			</h2>
+			<img src="images/Profile-pic.png" class="mx-auto w-4/5 my-10 rounded-xl" alt="Profile Picture" />
+		</div>
+		<Button/>
+	</body>
+</html>
+
+<style>
+  .bg-abstract{
+	/* background-image:url("/Bg-violet-texture.svg"); */
+    background-image:url("/images/bg-abs.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+  }
+</style>
